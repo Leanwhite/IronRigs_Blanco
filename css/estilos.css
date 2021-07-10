@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;    
+}
+html {
+    font-size: 20px;
+}
+body {
+    background-image: linear-gradient(to bottom, #5a6054, #747b70, #90988e, #adb5ad, #cbd3cc, #d9e1da, #e7efe9, #f5fdf7, #f5fdf7, #f5fdf7, #f5fdf7, #f5fdf7, #f5fdf7, #f5fdf7, #f5fdf7, #f5fdf7, #f5fdf7, #f5fdf7, #f5fdf7);
+    width: auto;
+    height: auto;
+}
+/*grin Home*/
+.gridHome {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+     "Frente Frente"
+     "criptoVid Publicidad"
+     "tablaFondo tablaFondo"
+     "footer footer";
+     align-content: 3rem; 
+}
+/*Barra navegacion*/
+.barra {
+    z-index: 5;
+    position: fixed;
+    color: rgb(185, 248, 193);
+    width: 100%;
+    background-color: rgb(33, 36, 36);
+}
+#Logo {
+    margin: -25px 10px;
+    height: 90px;
+    width: 90px;
+}
+.ulBarra {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    overflow: hidden;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+li  {
+    float: left;   
+}
+li a {
+    display: block;
+    color: rgb(150, 145, 84);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 1rem;
+}
+/*seccion inicial IronRigs y leyenda*/
+.Frente {
+    grid-area: Frente;
+    width: 100%;
+}
+#ironrigs{
+    color: rgb(50, 54, 51);
+    border-color: rgb(150, 145, 84);
+    font-size: 10rem;
+    padding: 5rem 0px 0px 0px;
+    letter-spacing: 1rem;
+    text-align: center;
+}
+#Crypto {
+    font-size: 1.3rem;
+    padding: 1rem;
+    font-family: monospace;
+    font-style: italic;
+    position: absolute;
+    left: 45%;
+    top: 13.50rem;
+}
+/*Tabla*/
+.tablaFondo {
+    grid-area: tablaFondo;
+    background-color: rgb(33, 36, 36);
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+}
+#Titulo {  
+    font-size: 1.5rem;
+    color: rgb(70, 54, 175);
+}
+.tablaHome {
+    text-align: center;
+    color: moccasin;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contactoTabla {
+    color: mediumslateblue;
+}
+th {
+    padding: 0.25rem 0px 0.25rem 0px;
+}
+/*MAIN*/
+.criptoVid {
+    grid-area: criptoVid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    margin: 5%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 10rem;
+}
+#Video1 {
+    float: center;
+    width: 38rem;
+    margin-top: 6rem;
+}
+#youtube1{
+    float: left;
+    width: 18rem;
+    height: 13rem;
+}
+#youtube2 {
+    float: right;
+    width: 18rem;
+    height: 13rem;
+}
+#text1 {
+    position: relative;
+    text-align: center;
+    margin-top: -15rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: rgb(33, 36, 36);
+}
+#text2 {
+    position: relative;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: rgb(33, 36, 36);
+}
+#text3 {
+    position: relative;
+    text-align: left;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: rgb(33, 36, 36);
+}
+/*Publicidad*/
+.Publicidad {
+    grid-area: Publicidad;
+    margin: 0;
+    position: -webkit-sticky;
+    position: sticky; top: 30%;
+    justify-self: stretch;
+    height: 40%;
+}
+#fotoPubli {
+    width: 7rem;
+    float: right;
+}
+/*Footer*/
+#happyM {
+    grid-area: footer;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    word-spacing: 0.5rem;
+    background-color: rgb(112, 122, 115);
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+/*Formulario*/
+#formulario {
+    padding: 70px 300px 0px 300px;
+    margin-bottom: 50px;
+}
+#rellenoForm {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 40px 20px 40px;
+}
+#leyenda {
+    text-align: center;
+}
+#textArea {
+    color: rgb(56, 56, 55);
+    width: 350px;
+    height: 100px;
+}
+/*Galeria equipos armados*/
+.Galeria {
+    margin: 0px;
+    padding: 5% 17% 10% 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-around;
+}
+#img {
+    margin: 0px 0px 50px 0px;
+    position: relative;
+    top: 30px;
+    left: 80px;
+    border: 3px solid rgb(250, 243, 219);
+    width: 35%;
+    height: 35%;
+}
+#img1 {
+    margin: 0px 0px 50px 100px;
+    position: relative;
+    top: 30px;
+    left: 80px;
+    border: 3px solid rgb(250, 243, 219);
+    width: 20%;
+    height: 20%;
+}
+/*Proyecto*/
+.proyecto {
+    text-align: center;
+    float:none;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+#textoLorem {
+    text-align: center;
+    color: black;
+}
