@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <title>IronRigs+Blanco</title>
 </head>
 <body>
@@ -24,16 +27,17 @@
         <fieldset>
             <legend id="leyenda">Envianos tu consulta y nos comunicaremos contigo a la brevedad</legend>
                 <ul id="rellenoForm">
-                    <label><strong>Nombre completo:</strong></label>
+                    <label>Nombre completo:</label>
                     <input type="text" placeholder="Aqui va el nombre completo">
                         <br><br>
-                    <label><strong>E-mail:</strong></label>
+                    <label>E-mail:</label>
                     <input type="text" placeholder="Aqui va el mail">
                         <br><br>
-                    <label><strong>Celular:</strong></label>
+                    <label>Celular:</label>
                     <input type="text" placeholder="Aqui va el celular">
                         <br><br>
-                    <label for="Motivo"> <strong>Consulta por:</strong></label>
+                    <label for="Motivo"> Consulta por:</label>
+                        <br><br>
                     <label>Cotizacion</label>
                     <input type="radio" name="Motivo" value="Cotizacion">
                     <label>Reclamos</label>    
@@ -41,14 +45,14 @@
                     <label>Otros</label>
                     <input type="radio" name="Motivo" value="Otros">
                         <br><br>
-                    <label><strong>Si es por cotizacion indicanos tu preferencia</strong></label>
+                    <label>Si es por cotizacion indicanos tu preferencia</label>
                     <label>Amd</label>
                     <input type="checkbox" name="Amd">
                     <label>Nvidia</label>
                     <input type="checkbox" name="Nvidia">
                         <br><br>
-                    <label><strong>A donde preferis que nos comuniquemos?</strong></label>
-                    <select> name="A donde preferis que nos comuniquemos?" 
+                    <label>A donde preferis que nos comuniquemos?</label>
+                    <select> name="via de comunicacion" 
                         <option value="celular">Celular</option>
                         <option value="Email">Email</option>
                     </select>
@@ -60,6 +64,7 @@
                 </ul>
         </fieldset>
     </form>
+    <hr>
     <footer id="happyM">
         <p>Happy Minning!!</p>
     </footer>
