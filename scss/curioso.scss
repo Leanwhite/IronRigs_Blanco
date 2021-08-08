@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: "Staatliches", cursive;
+}
+
+body {
+    background-color: white;
+}
+
+// VARIABLES
+$textSize: 2rem;
+$amarilloIron: rgb(231, 229, 121);
+$azulIron: rgb(140, 148, 255);
+// CURIOSO PAGE
+.secreto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Staatliches", cursive;
+    .secreto__oferta {
+        margin-top: 4rem;
+        padding: 1rem;
+        background-color: $amarilloIron;
+        transform: skew(-10deg, -2deg);
+        font-size: $textSize * 4/5;
+        #secreto__oferta__msj {
+            text-align: center;
+            padding-top: 1rem;
+        }
+        #secreto__oferta__msj--1 {
+            text-align: center;
+        }
+    }
+    .secreto__despedida {
+        padding: 150px 0px 0px 0px;
+        #secreto__despedida__msj {
+            $boton: boton;
+            background-color: rgb(94, 90, 90);
+            color: rgb(226, 226, 216);
+            text-align: center;
+            text-decoration: none;
+            padding: 5px;
+            font-size: $textSize;
+        }
+        #secreto__despedida__msj:hover {
+            color: rgb(241, 241, 105);
+        }
+    }
+}
+// CURIOSO PAGE2
+.secreto2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Staatliches", cursive;
+    .secreto2__oferta {
+        margin-top: 5rem;
+        padding: 1rem;
+        background-color: $azulIron;
+        transform: skew(10deg, 2deg);
+        font-size: $textSize * 1.5;
+        #secreto2__oferta__msj {
+            text-align: center;
+        }
+        #secreto2__oferta__msj--1 {
+            text-align: center;
+        }
+    }
+    .secreto2__despedida {
+        padding: 120px 0px 0px 0px;
+        #secreto2__despedida__msj {
+            $boton: boton;
+            background-color: rgb(94, 90, 90);
+            color: rgb(226, 226, 216);
+            text-align: center;
+            text-decoration: none;
+            padding: 5px;
+            font-size: $textSize;
+        }
+        #secreto2__despedida__msj:hover {
+            color: rgb(241, 241, 105);
+        }
+        #secreto2__despedida__comprar {
+            $boton: boton;
+            background-color: rgb(94, 90, 90);
+            color: rgb(226, 226, 216);
+            text-align: center;
+            text-decoration: none;
+            padding: 5px;
+            font-size: $textSize;
+        }
+        #secreto2__despedida__comprar:hover {
+            color: rgb(241, 241, 105);
+        }
+    }
+}
+
+// EL PROYECTO PAGE
+
+.proyecto {
+    padding-bottom: $textSize;
+    padding-left: $textSize;
+    padding-right: $textSize;
+    text-align: center;
+    #proyecto__titulo {
+        text-align: center;
+        float: none;
+        padding-top: 100px;
+        margin-bottom: 50px;
+        font-size: $textSize * 1.5;
+        background: -webkit-linear-gradient(rgba(241, 248, 216, 0.808), rgba(216, 219, 0, 0.884));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px rgba(14, 6, 83, 0.815);
+        #proyecto__titulo--texto {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.76);
+        }
+    }
+}
+
+// RESPONSIVE
+
+//320px
+
+@media screen and (max-width: 480px) {
+    .gridHome {
+        grid-template-columns: auto (1, 1fr);
+    }
+    .Publicidad {
+        display: none;
+    }
+    #ironrigs {
+        display: none;
+    }
+    #Crypto {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    #Titulo {
+        color: rgb(39, 38, 44);
+        -webkit-text-stroke: 0.01px black;
+    }
+    .tablaFondo {
+        grid-area: tablaFondo;
+        background-color: rgb(103, 109, 109);
+        padding-top: 0.5rem;
+        padding-bottom: 0.75rem;
+    }
+    .criptoVid {
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+    #Video1 {
+        width: 100%;
+        margin-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    #youtube2 {
+        margin-top: -6rem;
+    }
+    #text2 {
+        margin-top: -5rem;
+        text-align: center;
+    }
+    #text3 {
+        margin-top: -5rem;
+        text-align: center;
+    }
+    #bitcoin {
+        display: none;
+    }
+    #ethereum {
+        display: none;
+    }
+    #contactoTabla {
+        color: rgb(181, 230, 102);
+    }
+}

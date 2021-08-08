@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 * {
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;
 }
 html {
     font-size: 20px;
+    font-family: "Staatliches", cursive;
 }
 body {
     background-color: white;
@@ -18,11 +19,11 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas:
-     "Frente Frente"
-     "criptoVid Publicidad"
-     "tablaFondo tablaFondo"
-     "footer footer";
-     align-content: 3rem; 
+        "Frente Frente"
+        "criptoVid Publicidad"
+        "tablaFondo tablaFondo"
+        "footer footer";
+    align-content: 3rem;
 }
 /*Barra navegacion*/
 .barra {
@@ -30,11 +31,11 @@ body {
     position: fixed;
     color: rgb(185, 248, 193);
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.911);
     border-bottom: 1px solid rgb(220, 221, 221);
 }
 #Logo {
-    margin: -1.25rem 0.5rem;
+    margin: -1rem 0.5rem;
     height: 4.5rem;
     width: 4.5rem;
 }
@@ -42,22 +43,28 @@ body {
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style: none;
     overflow: hidden;
     padding-right: 40px;
     padding-left: 10px;
 }
-li  {
-    float: left;   
+#lista2 {
+    padding-right: 3rem;
+}
+li {
+    list-style: none;
+    float: left;
 }
 li a {
+    padding: 10px;
     display: block;
     color: rgb(129, 128, 113);
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     text-align: center;
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 1.3rem;
+    justify-content: space-around;
 }
 li a:hover {
     color: rgb(53, 54, 52);
@@ -68,16 +75,16 @@ li a:hover {
     grid-area: Frente;
     width: 100%;
 }
-#ironrigs{
+#ironrigs {
     z-index: 4;
     /* color: rgb(91, 95, 91); */
-    background: -webkit-linear-gradient(rgba(241, 248, 216, 0.808),rgba(216, 219, 0, 0.884));
+    background: -webkit-linear-gradient(rgba(241, 248, 216, 0.808), rgba(216, 219, 0, 0.884));
     /* background: -webkit-linear-gradient(rgba(255, 173, 251, 0.692),rgba(243, 245, 119, 0.76)); */
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px rgba(14, 6, 83, 0.815);
+    -webkit-text-stroke: 3px rgba(14, 6, 83, 0.815);
     /* -webkit-text-stroke: 1px rgb(37, 33, 33); */
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     font-size: 10rem;
     padding: 2rem 0px 0px 0px;
     letter-spacing: 1rem;
@@ -89,7 +96,7 @@ li a:hover {
 #Crypto {
     font-size: 1.3rem;
     padding: 1rem;
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     font-style: italic;
     position: absolute;
     left: 57%;
@@ -139,27 +146,29 @@ li a:hover {
     z-index: 3;
     width: 6rem;
     height: 6rem;
+    padding-top: -4rem;
     float: right;
     padding-right: 4rem;
-    animation-duration: 1.4s;
+    animation-duration: 1s;
     animation-name: coin1;
     animation-iteration-count: initial;
 }
 @keyframes coin1 {
     0% {
         transform: scale(0);
-        transform: skew(0deg,0deg);
+        /* transform: skew(0deg, 0deg); */
     }
-    40% {
-        transform: skew(-20deg,-10deg);
-    }
-    80% {
+    65% {
         transform: scale(1.25);
-        transform: skew(20deg,10deg);
+        /* transform: skew(20deg, 10deg); */
+    }
+    90% {
+        transform: scale(0.9);
+        /* transform: skew(20deg, 10deg); */
     }
     100% {
         transform: scale(1);
-        transform: skew(0deg,0deg);
+        /* transform: skew(0deg, 0deg); */
     }
 }
 /*Tabla*/
@@ -169,10 +178,11 @@ li a:hover {
     padding-top: 0.5rem;
     padding-bottom: 0.75rem;
 }
-#Titulo {  
-    font-family: 'Staatliches', cursive;
+#Titulo {
+    font-family: "Staatliches", cursive;
     font-size: 1.3rem;
-    color: rgb(96, 83, 180);
+    color: rgb(75, 56, 197);
+    -webkit-text-stroke: 0.01px rgb(190, 194, 255);
 }
 .tablaHome {
     text-align: center;
@@ -186,9 +196,9 @@ th {
     padding: 0.25rem 0px 0.25rem 0px;
 }
 td {
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     font-size: 0.8rem;
-    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    padding: 0.25rem 0.40rem 0.25rem 0.25rem;
 }
 /*MAIN*/
 .criptoVid {
@@ -207,16 +217,13 @@ td {
 #Video1 {
     float: center;
     width: 38rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
-#youtube1{
+#youtube1 {
     float: left;
     margin-top: -6rem;
     width: 18rem;
     height: 13rem;
-}
-#youtube1:hover{
-    transform: skewY(50deg,50deg);
 }
 #youtube2 {
     float: right;
@@ -227,7 +234,7 @@ td {
     position: relative;
     text-align: center;
     margin-top: -15rem;
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     /* font-style: italic; */
     font-size: 1.5rem;
     color: rgb(33, 36, 36);
@@ -235,42 +242,54 @@ td {
 #text2 {
     position: relative;
     text-align: right;
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     /* font-style: italic; */
     padding: 1rem;
     font-size: 1rem;
     margin-top: -6rem;
     color: rgb(33, 36, 36);
     background-color: rgb(231, 229, 121);
-    transform: skew(-10deg,-2deg);
+    transform: skew(-10deg, -2deg);
 }
 #text3 {
     position: relative;
     text-align: left;
     padding: 1rem;
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     font-style: italic;
     font-size: 1rem;
     color: rgb(33, 36, 36);
     background-color: rgb(140, 148, 255);
-    transform: skew(10deg,2deg);
+    transform: skew(10deg, 2deg);
 }
 /*Publicidad*/
 .Publicidad {
     grid-area: Publicidad;
     margin: 0;
     position: -webkit-sticky;
-    position: sticky; top: 30%;
+    position: sticky;
+    top: 30%;
     justify-self: stretch;
     height: 20%;
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     text-align: center;
     font-size: 1.3rem;
 }
-#fotoPubli {
+#publicidad__buttom {
+    text-decoration: none;
+    /* color: rgba(34, 34, 34, 0.658); */
+    background: -webkit-linear-gradient(rgba(241, 248, 216, 0.808), rgba(216, 219, 0, 0.884));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(14, 6, 83, 0.815);
+}
+#publicidad__buttom:hover {
+    text-shadow: 0 0 15px rgb(201, 201, 201);
+}
+/* #fotoPubli {
     width: 7rem;
     float: right;
-}
+} */
 /*Footer*/
 #happyM {
     grid-area: footer;
@@ -279,8 +298,8 @@ td {
     font-size: 1rem;
     letter-spacing: 5px;
     word-spacing: 0.5rem;
-    background-image: linear-gradient(to right top, #f1a4cf, #ffb2b8, #ffcaa8, #ffe5ab, #edffc4);
-    /* background-color: rgb(252, 225, 166); */
+    /* background-image: linear-gradient(to right top, #f1a4cf, #ffb2b8, #ffcaa8, #ffe5ab, #edffc4); */
+    background-color: rgb(185, 185, 185);
     width: 100%;
     padding-top: 5rem;
     padding-bottom: 1rem;
@@ -291,12 +310,12 @@ td {
     margin-bottom: 2.5rem;
 }
 #rellenoForm {
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     padding: 1rem 2rem 1rem 2rem;
     word-spacing: 0.2rem;
 }
 #leyenda {
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     text-align: center;
 }
 #textArea {
@@ -344,15 +363,4 @@ td {
 #img1:hover {
     width: 24%;
     height: 24%;
-}
-/*Proyecto*/
-.proyecto {
-    text-align: center;
-    float:none;
-    padding-top: 100px;
-    margin-bottom: 50px;
-}
-#textoLorem {
-    text-align: center;
-    color: black;
 }

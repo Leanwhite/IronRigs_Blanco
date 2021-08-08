@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+* {
+  margin: 0;
+}
+
+html {
+  font-family: "Staatliches", cursive;
+}
+
+body {
+  background-color: white;
+}
+
+.secreto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Staatliches", cursive;
+}
+
+.secreto .secreto__oferta {
+  margin-top: 4rem;
+  padding: 1rem;
+  background-color: #e7e579;
+  -webkit-transform: skew(-10deg, -2deg);
+          transform: skew(-10deg, -2deg);
+  font-size: 1.6rem;
+}
+
+.secreto .secreto__oferta #secreto__oferta__msj {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.secreto .secreto__oferta #secreto__oferta__msj--1 {
+  text-align: center;
+}
+
+.secreto .secreto__despedida {
+  padding: 150px 0px 0px 0px;
+}
+
+.secreto .secreto__despedida #secreto__despedida__msj {
+  background-color: #5e5a5a;
+  color: #e2e2d8;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 2rem;
+}
+
+.secreto .secreto__despedida #secreto__despedida__msj:hover {
+  color: #f1f169;
+}
+
+.secreto2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Staatliches", cursive;
+}
+
+.secreto2 .secreto2__oferta {
+  margin-top: 5rem;
+  padding: 1rem;
+  background-color: #8c94ff;
+  -webkit-transform: skew(10deg, 2deg);
+          transform: skew(10deg, 2deg);
+  font-size: 3rem;
+}
+
+.secreto2 .secreto2__oferta #secreto2__oferta__msj {
+  text-align: center;
+}
+
+.secreto2 .secreto2__oferta #secreto2__oferta__msj--1 {
+  text-align: center;
+}
+
+.secreto2 .secreto2__despedida {
+  padding: 120px 0px 0px 0px;
+}
+
+.secreto2 .secreto2__despedida #secreto2__despedida__msj {
+  background-color: #5e5a5a;
+  color: #e2e2d8;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 2rem;
+}
+
+.secreto2 .secreto2__despedida #secreto2__despedida__msj:hover {
+  color: #f1f169;
+}
+
+.secreto2 .secreto2__despedida #secreto2__despedida__comprar {
+  background-color: #5e5a5a;
+  color: #e2e2d8;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 2rem;
+}
+
+.secreto2 .secreto2__despedida #secreto2__despedida__comprar:hover {
+  color: #f1f169;
+}
+
+.proyecto {
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.proyecto #proyecto__titulo {
+  text-align: center;
+  float: none;
+  padding-top: 100px;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  background: -webkit-linear-gradient(rgba(241, 248, 216, 0.808), rgba(216, 219, 0, 0.884));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(14, 6, 83, 0.815);
+}
+
+.proyecto #proyecto__titulo #proyecto__titulo--texto {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+@media screen and (max-width: 480px) {
+  .gridHome {
+    -ms-grid-columns: auto 1, 1fr;
+        grid-template-columns: auto 1, 1fr;
+  }
+  .Publicidad {
+    display: none;
+  }
+  #ironrigs {
+    display: none;
+  }
+  #Crypto {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  #Titulo {
+    color: #27262c;
+    -webkit-text-stroke: 0.01px black;
+  }
+  .tablaFondo {
+    grid-area: tablaFondo;
+    background-color: #676d6d;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+  }
+  .criptoVid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 4rem;
+  }
+  #Video1 {
+    width: 100%;
+    margin-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  #youtube2 {
+    margin-top: -6rem;
+  }
+  #text2 {
+    margin-top: -5rem;
+    text-align: center;
+  }
+  #text3 {
+    margin-top: -5rem;
+    text-align: center;
+  }
+  #bitcoin {
+    display: none;
+  }
+  #ethereum {
+    display: none;
+  }
+  #contactoTabla {
+    color: #b5e666;
+  }
+}
+/*# sourceMappingURL=curioso.css.map */

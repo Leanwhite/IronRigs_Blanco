@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="scss/curioso.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <title>IronRigs+Blanco</title>
 </head>
+
 <body>
     <header>
         <nav class="barra">
             <ul class="ulBarra">
-                <li><img src="img/logo.png" alt="IronRigs" id="Logo"></li>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="Equiposarmados.html">EQUIPOS ARMADOS</a></li>
-                <li><a href="Insumos.html">INSUMOS</a></li>
-                <li><a href="Contacto.html">CONTACTO</a></li>
-                <li><a href="Elproyecto.html">EL PROYECTO</a></li> 
+                <img src="img/logo.png" alt="IronRigs" id="Logo">
+                <ul id="lista2">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Equiposarmados.html">EQUIPOS ARMADOS</a></li>
+                    <li><a href="Comprar.html">COMPRAR</a></li>
+                    <li><a href="Contacto.html">CONTACTO</a></li>
+                    <li><a href="Elproyecto.html">EL PROYECTO</a></li>
+                </ul>
             </ul>
         </nav>
     </header>
     <form action="" id="formulario">
         <fieldset>
             <legend id="leyenda">Envianos tu consulta y nos comunicaremos contigo a la brevedad</legend>
-                <ul id="rellenoForm">
-                    <label>Nombre completo:</label>
-                    <input type="text" placeholder="Aqui va el nombre completo">
-                        <br><br>
-                    <label>E-mail:</label>
-                    <input type="text" placeholder="Aqui va el mail">
-                        <br><br>
-                    <label>Celular:</label>
-                    <input type="text" placeholder="Aqui va el celular">
-                        <br><br>
-                    <label for="Motivo"> Consulta por:</label>
-                        <br><br>
-                    <label>Cotizacion</label>
-                    <input type="radio" name="Motivo" value="Cotizacion">
-                    <label>Reclamos</label>    
-                    <input type="radio" name="Motivo" value="Reclamos">
-                    <label>Otros</label>
-                    <input type="radio" name="Motivo" value="Otros">
-                        <br><br>
-                    <label>Si es por cotizacion indicanos tu preferencia</label>
-                    <label>Amd</label>
-                    <input type="checkbox" name="Amd">
-                    <label>Nvidia</label>
-                    <input type="checkbox" name="Nvidia">
-                        <br><br>
-                    <label>A donde preferis que nos comuniquemos?</label>
-                    <select> name="via de comunicacion" 
-                        <option value="celular">Celular</option>
-                        <option value="Email">Email</option>
-                    </select>
-                        <br><br>
-                    <textarea id="textArea"></textarea>
-                        <br><br>
-                    <input type="submit" value="Enviar"/>
-                    <input type="reset" value="Limpiar"/>
-                </ul>
+            <ul id="rellenoForm">
+                <label>Nombre completo:</label>
+                <input type="text" placeholder="Aqui va el nombre completo">
+                <br><br>
+                <label>E-mail:</label>
+                <input type="text" placeholder="Aqui va el mail">
+                <br><br>
+                <label>Celular:</label>
+                <input type="text" placeholder="Aqui va el celular">
+                <br><br>
+                <label for="Motivo"> Consulta por:</label>
+                <br><br>
+                <label>Cotizacion</label>
+                <input type="radio" name="Motivo" value="Cotizacion">
+                <label>Reclamos</label>
+                <input type="radio" name="Motivo" value="Reclamos">
+                <label>Otros</label>
+                <input type="radio" name="Motivo" value="Otros">
+                <br><br>
+                <label>Si es por cotizacion indicanos tu preferencia</label>
+                <label>Amd</label>
+                <input type="checkbox" name="Amd">
+                <label>Nvidia</label>
+                <input type="checkbox" name="Nvidia">
+                <br><br>
+                <label>A donde preferis que nos comuniquemos?</label>
+                <select> name="via de comunicacion"
+                    <option value="celular">Celular</option>
+                    <option value="Email">Email</option>
+                </select>
+                <br><br>
+                <textarea id="textArea"></textarea>
+                <br><br>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpiar" />
+            </ul>
         </fieldset>
     </form>
     <hr>
     <footer id="happyM">
         <p>Happy Minning!!</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

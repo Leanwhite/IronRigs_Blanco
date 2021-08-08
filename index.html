@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="scss/curioso.css">
     <title>IronRigs+Blanco</title>
 </head>
 
@@ -16,12 +18,14 @@
     <header>
         <nav class="barra">
             <ul class="ulBarra">
-                <li><img src="img/logo.png" alt="IronRigs" id="Logo"></li>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="Equiposarmados.html">EQUIPOS ARMADOS</a></li>
-                <li><a href="Insumos.html">INSUMOS</a></li>
-                <li><a href="Contacto.html">CONTACTO</a></li>
-                <li><a href="Elproyecto.html">EL PROYECTO</a></li>
+                <img src="img/logo.png" alt="IronRigs" id="Logo">
+                <ul  id="lista2">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Equiposarmados.html">EQUIPOS ARMADOS</a></li>
+                    <li><a href="Comprar.html">COMPRAR</a></li>
+                    <li><a href="Contacto.html">CONTACTO</a></li>
+                    <li><a href="Elproyecto.html">EL PROYECTO</a></li>
+                </ul>
             </ul>
         </nav>
     </header>
@@ -47,7 +51,7 @@
                 allowfullscreen></iframe>
         </main>
         <aside class="Publicidad">
-            <pv><a href=Curioso.html>No hagas<br>click</a></p>
+            <a href=Curioso.html id="publicidad__buttom">No hagas<br>click</a>
             <!-- <img src="img/publicidad.png" alt="Publicidad" id="fotoPubli"> -->
         </aside>
         <div class="tablaFondo">
@@ -63,8 +67,8 @@
                     <td>Para los que recien empiezan, o para los compradores recurrentes.</td>
                 </tr>
                 <tr>
-                    <td>Contactanos por Whatsapp, por mail, por la sección <a href=Contacto.html
-                            id="contactoTabla">Contacto</a> o por nuestras redes sociales.</td>
+                    <td>Contactanos por Whatsapp, mail, redes sociales o por la sección <a href=Contacto.html
+                            id="contactoTabla">Contacto</a></td>
                     <td>Te lo llevas listo para minar, lo enchufas y listo.</td>
                     <td>Asesoramiento pre y post venta, garantia de fabrica.</td>
                 </tr>
@@ -72,9 +76,15 @@
         </div>
     </div>
     <hr>
-        <footer id="happyM">
-            <p id="textHappy">Happy Minning</p>
-        </footer>
+    <footer id="happyM">
+        <p id="textHappy">Happy Minning</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+<!-- prueba -->
 
 </html>
